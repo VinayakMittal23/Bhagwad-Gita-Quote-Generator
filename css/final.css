@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    
+}
+.f{
+    display: none;
+}
+
+#fimg{
+    width: 40vw;
+    height: 60vh;
+    animation: krishna 2s forwards ;
+}
+
+.final-animation {
+    animation: waviy 2s;
+    
+}
+
+@keyframes krishna {
+    from{
+        opacity: 0;
+       transform: scale(2);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.quote{
+    font-size: 1.3rem;
+    color: rgb(26, 11, 46);
+    width: 80%;
+    margin-right: 1rem;
+    
+    
+}
+.ftext{
+    display: flex;
+    width: 50%;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2em;
+}
+.fbtn{
+    background-color: none;
+    position: relative;
+    font-size: 1.7rem;
+    padding: 0.34em 1.48em;
+    margin: 3rem 0rem;
+    background-color: rgb(54, 0, 125);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(54, 0, 125);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow:  0.5rem 0.5rem  rgb(34, 184, 230);
+    box-sizing: border-box;
+    animation: waviy 2s;
+    animation-delay: 0.5s;
+    cursor: pointer;
+    
+
+}
+
+.fbtn:hover{
+    background-color: rgba(254, 210, 88, 0);
+    color: rgb(54, 0, 125);
+    box-shadow: -0.5rem -0.5rem  rgb(249, 158, 30);
+    
+}
+
+@media (max-width:600px) {
+    .final{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: visible;
+    }
+    
+    #fimg{
+        width: 70vw;
+        height: 40vh;
+    }
+    .quote{
+        padding: 0.6em;
+        text-align: center;
+        font-size: 1.34rem;
+        width: 100%;
+        margin-right: 0;
+        font-size: 1.3rem;
+    }
+    .ftext{
+        margin: 1rem 0rem;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .fbtn{
+        margin: 1.3rem 0rem;
+    }
+}
+
+@keyframes waviy {
+    from{
+        opacity: 0.4;
+        transform: scale(2);
+        
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+  }
+  
+  
+  @keyframes loading {
+      0%{
+          background-color: rgba(255, 15, 15, 0.62);
+          transform: scale(1);
+      }
+      50%{
+          background-color: rgba(4, 4, 79, 0.886);
+          transform: scale(1.5);
+        }
+      100%{
+          background-color: rgba(255, 15, 15, 0.62);
+          transform: scale(1);
+        }
+  }
